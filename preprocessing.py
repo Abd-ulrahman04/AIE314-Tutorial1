@@ -1,6 +1,6 @@
 import os
 import json
-import fitz  # PDF
+import fitz 
 import docx
 import pandas as pd
 from pptx import Presentation
