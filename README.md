@@ -1,4 +1,10 @@
 Abdulrahman Mohamed Eltahan 21100958
+Youssef Hisham 22101136
+Mina Medhat William Mosa 22101117
+Antonius sameh Samer 22101053
+Mohamed yasser mohamed 21100838 
+
+
 
 ## Project Description
 This project involves preprocessing unstructured data from various document types (PDF, Word, Excel, PowerPoint) and generating normalized JSON files suitable for LLM (Large Language Model) applications. The preprocessing pipeline extracts text, cleans it, and saves it in a consistent JSON format, ready for use in RAG (Retrieval-Augmented Generation) systems or other NLP tasks.
