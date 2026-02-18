@@ -24,9 +24,9 @@ AIE314-Tutorial1/
 
 3. Run the preprocessing script:
 
-   ```
+ ```
    python preprocessing.py
-   ```
+ ```
 4. Check the `output/` folder for the generated JSON files.
 
 ## Notes
