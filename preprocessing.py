@@ -5,24 +5,15 @@ import docx
 import pandas as pd
 from pptx import Presentation
 
-
-# ==============================
-# Text Cleaning Function
-# ==============================
 def clean_text(text):
     if not text:
         return ""
 
-    # إزالة المسافات الزائدة
     text = text.replace("\n", " ").replace("\r", " ")
     text = " ".join(text.split())
 
     return text
 
-
-# ==============================
-# PDF Extraction
-# ==============================
 def extract_pdf_text(file_path):
     text = ""
     try:
@@ -33,10 +24,6 @@ def extract_pdf_text(file_path):
         print(f"Error reading PDF {file_path}: {e}")
     return text
 
-
-# ==============================
-# Word Extraction
-# ==============================
 def extract_docx_text(file_path):
     text = ""
     try:
@@ -47,9 +34,6 @@ def extract_docx_text(file_path):
     return text
 
 
-# ==============================
-# Excel Extraction
-# ==============================
 def extract_excel_text(file_path):
     text = ""
     try:
@@ -59,10 +43,6 @@ def extract_excel_text(file_path):
         print(f"Error reading Excel {file_path}: {e}")
     return text
 
-
-# ==============================
-# PowerPoint Extraction
-# ==============================
 def extract_ppt_text(file_path):
     text = ""
     try:
@@ -75,10 +55,6 @@ def extract_ppt_text(file_path):
         print(f"Error reading PPT {file_path}: {e}")
     return text
 
-
-# ==============================
-# Save Normalized JSON
-# ==============================
 def save_json(title, content, source_file, output_path):
     data = {
         "title": title,
@@ -92,10 +68,6 @@ def save_json(title, content, source_file, output_path):
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
-
-# ==============================
-# Main Processing Function
-# ==============================
 def process_files():
     input_folder = "data"
     output_folder = "output"
