@@ -18,7 +18,7 @@ AIE314-Tutorial1/
 ## How to Run the Code
 1. Place your documents (PDF, Word, Excel, PPTX) in the `data/` folder.
 2. Install the required Python libraries:
-   ```bash
+````
    pip install pymupdf python-docx pandas python-pptx openpyxl
 ````
 
